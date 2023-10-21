@@ -403,6 +403,17 @@ span,
     background-size: cover;
     background-position: center;
 }
+.search-doner .search{
+    background: url('../img/search.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.become-doner .donor{
+    background: url('../img/become-donor.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .about .wrap,
 .teacher .wrap{
     width: 100%;
@@ -595,6 +606,23 @@ span,
         float: left;
         margin-right: 0;
     }
+
+    /*-------- rules-html-part -------*/
+    .rules #about h4{
+        font-size: 18px;
+    }
+    .rules .tipes h1{
+        font-size: 28px;
+    }
+
+    /*-------- about-html-part -------*/
+    .about-page .video-part h1{
+        font-size: 22px;
+    }
+    .about-page .video-part .btn-light{
+        padding: 17px 49.5px !important;
+    }
+
 }
 
 @media (max-width: 415px) {
@@ -608,6 +636,34 @@ span,
         display: inline-block;
         margin-top: 20px;
         margin-left: 22%;
+    }
+
+    /*-------- rules-html-part -------*/
+    .rules #about h4{
+        font-size: 16px;
+        text-align: justify!important;
+    }
+    .rules #about h3{
+        font-size: 17px;
+    }
+    .rules #about .section-title::after{
+        display: none;
+    }
+    .rules .tipes h1{
+        font-size: 20px;
+    }
+    .rules .tipes .btn-light{
+        padding: 17px 49.5px !important;
+    }
+
+    /*-------- about-html-part -------*/
+    .about-page #about h1{
+        font-size: 22px;
+    }
+
+    /*-------- Contact-html-part -------*/
+    .contact .address{
+        margin-left: 0;
     }
 
 }

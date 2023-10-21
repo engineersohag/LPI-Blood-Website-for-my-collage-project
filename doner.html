@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Contact Us | LPI-Blood Bank</title>
+    <title>Become a Donner | LPI-Blood Bank</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -40,7 +40,7 @@
        
    </div>
     
-    <div class="container-xxl bg-white p-0 rules contact">
+    <div class="container-xxl bg-white p-0 become-doner">
 
         <!-- ================= Navigation Bar =================== -->
         <div class="container-fluid bg-dark px-0">
@@ -138,9 +138,9 @@
 
 
         <!-- ===================== Header Section =================== -->
-        <div class="about contact">
+        <div class="about donor">
             <div class="wrap">
-                <h4>Home > <span>Contact</span></h4>
+                <h4>Home > <span>Become a Donor</span></h4>
             </div>
         </div>
 
@@ -148,10 +148,10 @@
         <div class="container-xxl py-5" id="about">
             <div class="container">
                 <h5 class="section-title text-start text-primary text-uppercase">
-                            Contact Us
+                            Become a Blood Donor
                 </h5>
                 <marquee class="mb-4 bg-primary" behavior="scroll">
-                    <h4 class="p-2 text-white">For any requirement call: 01750965595 or Mail to <a href="">connectwithsohag@gmail.com</a>. Thank You!</h4>
+                    <h4 class="p-2 text-white">Find your nearest blood donor by filling the form below. For any requirement call: 01750965595 or Mail to <a href="">connectwithsohag@gmail.com</a>. Thank You!</h4>
                 </marquee>
             </div>
         </div>
@@ -163,8 +163,8 @@
                 <div class="row wow fadeInUp">
                     <div class="col-12 col-lg-8">
                         <div class="card text-center">
-                            <div class="card-body">
-                                <h3 class="h4">Please fill out this form to contact us</h3>
+                            <div class="card-body fadeInUp wow">
+                                <h3 class="h4">👇 Fill this form and become a blood warrior. 👇</h3>
                                 <form action="#" method="POST">
                                     <div class="row">
                                         <div class="col-12 col-md-6 mt-2">
@@ -195,39 +195,39 @@
                                                 <option value="8">AB-</option>
                                             </select>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 mt-2">
-                                            <textarea name="" id="" cols="30" rows="5" placeholder="Massage" class="form-control"></textarea>
+                                        <div class="col-12 col-md-6 mt-2">
+                                            <input type="text" placeholder="Your weight" class="form-control">
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-2">
+                                            <input type="number" placeholder="Enter your one friend number" class="form-control">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 mt-2">
-                                            <input type="submit" value="Send" class="form-control d-grid bg-primary text-uppercase text-white">
+                                        <div class="col-6 mt-4">
+                                            <label for="date">Last <span>Blood Donated</span> Date :</label>
+                                            <input type="date" class="form-control" id="date">
+                                        </div>
+                                        <div class="col-6 mt-4">
+                                            <label for="upload-img">Upload your <span>Image</span> :</label>
+                                            <input type="file" class="form-control" id="upload-img">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 mt-3">
+                                            <input type="submit" value="Submit" class="form-control d-grid bg-primary text-uppercase text-white">
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 mt-lg-0 mt-3 address">
-                        <div class="card">
+                    <div class="col-12 fadeInUp wow col-lg-4 mt-lg-0 mt-3 address">
+                        <div class="card" style="height: 391px;">
+                            <h4 class="px-3 pt-4 text-center"><span>Donate</span> Blood, <span>Safe</span> Life</h4>
                             <div class="card-body">
-                                <h4 class="h4">Get In Touch</h4>
-                                <p>Keep in touch with us and call or mail us for any requirement. We are ready to assist you.</p>
-                                <h4 class="h4">Address</h4>
-                                <p>Lakshmipur Polytechnic Institute - Baismara, Lakshmipur Sadar - 3700, Lakshmipur</p>
-                                <h4>Email</h4>
-                                <p>lpiblood@gmail.com <br> connectwithsohag@gmail.com</p>
-                                <h4>Phone</h4>
-                                <p>01750965595 </p>
+                                <img src="img/my-donated.jpg" alt="..." style="width: 100%; height: 100%;" id="profile-img">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 wow fadeInUp mt-4">
-                        <a href="doner.html" class="btn btn-primary w-100">Become a Donor</a>
                     </div>
                 </div>
             </div>
@@ -380,6 +380,20 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <!-- ----------- Image - Upload ----------- -->
+
+    <script>
+        
+        var image = document.getElementById('profile-img');
+        var input = document.getElementById('upload-img');
+
+        input.addEventListener("change", () => {
+            image.src = URL.createObjectURL(input.files[0])
+        });
+
+    </script>
 </body>
 
 </html>
