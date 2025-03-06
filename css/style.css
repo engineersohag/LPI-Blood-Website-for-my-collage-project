@@ -168,7 +168,7 @@ nav .navbar-nav .nav-link:hover{
     position: relative;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/video.jfif);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/video.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -592,9 +592,6 @@ span,
     bottom: 45px;
     z-index: 99;
 }
-
-
-
 
 
 
